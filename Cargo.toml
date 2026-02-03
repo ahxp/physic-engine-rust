@@ -1,0 +1,24 @@
+[package]
+name = "rustphy"
+version = "0.1.0"
+edition = "2021"
+description = "A sophisticated 3D rigid body physics engine"
+license = "MIT"
+keywords = ["physics", "simulation", "3d", "rigid-body", "game"]
+categories = ["game-development", "simulation"]
+
+[dependencies]
+# Zero dependencies for core - fully self-contained
+
+[dev-dependencies]
+criterion = "0.5"
+macroquad = "0.4"
+
+# Benchmark disabled until we add the bench file
+# [[bench]]
+# name = "physics_bench"
+# harness = false
+
+[[example]]
+name = "visual_demo"
+required-features = []
